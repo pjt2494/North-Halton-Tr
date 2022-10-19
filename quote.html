@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request A Quote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Creating A Nav Bar -->
+    <nav>
+        
+        <div class="container">
+        
+            <h1 href="index.html">North Halton Trucking INC.</h1>
+  
+            <div class="menu">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="quote.html">Get A Quote</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+  
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+      </nav>
+        <br><br><br><br><br>
+        <div class="quote">
+            <div class="quote-form">
+                <form action="quote.html">
+                    <center><h1 class="title">Request A Quote</h1></center>
+                    <img src="portfolio2.jpg" width="750px" height="600">
+                    
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Name" class="input" />
+                        <label for="">Name</label>
+                        <span>Name</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Organization" class="input" />
+                        <label for="">Organization</label>
+                        <span>Organization</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Title" class="input" />
+                        <label for="">Title</label>
+                        <span>Title</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <h1 class="title">Location of Packages information</h1>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Original Location" class="input" />
+                        <label for="">Original Location</label>
+                        <span>Original Location</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Street Address" class="input" />
+                        <label for="">Street Address</label>
+                        <span>Street Address</Address></span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Address 2" class="input" />
+                        <label for="">Address 2</label>
+                        <span>Address 2</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="City" class="input" />
+                        <label for="">City</label>
+                        <span>City</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Province" class="input" />
+                        <label for="">Province</label>
+                        <span>Province</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Country" class="input" />
+                        <label for="">Country</label>
+                        <span>Country</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Postal Code" class="input" />
+                        <label for="">Postal Code</label>
+                        <span>Postal Code</span>
+                    </div>
+
+                    <h1 class="title">Destination Location</h1>
+                    <div class="quote-container focus">
+                        <input type="text" name="Destination" class="input" />
+                        <label for="">Destination</label>
+                        <span>Destination</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Street Address" class="input" />
+                        <label for="">Street Address</label>
+                        <span>Street Address</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Address 2" class="input" />
+                        <label for="">Address 2</label>
+                        <span>Address 2</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="City" class="input" />
+                        <label for="">City</label>
+                        <span>City</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Province" class="input" />
+                        <label for="">Province</label>
+                        <span>Province</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Country" class="input" />
+                        <label for="">Country</label>
+                        <span>Country</span>
+                    </div>
+
+                    <div class="quote-container focus">
+                        <input type="text" name="Postal Code" class="input" />
+                        <label for="">Postal Code</label>
+                        <span>Postal Code</span>
+                    </div>
+
+                    <input type="submit" value="Send" class="btn">
+                    
+                </form>
+
+            </div>
+        </div>
+        <script>
+const inputs = document.querySelectorAll(".input")
+
+function focusFunc(){
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+}
+
+function blurFunc(){
+    let parent = this.parentNode;
+    if(this.value == "") {
+        parent.classList.remove("focus");
+    }         
+}
+
+inputs.forEach(input => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+});
+        </script>
+</body>
+</html>

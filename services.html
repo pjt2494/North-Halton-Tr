@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="services">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="services">
+    <!-- Creating A Nav Bar -->
+    <nav>
+        
+        <div class="container">
+        
+            <h1 href="index.html">North Halton Trucking INC.</h1>
+  
+            <div class="menu">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="quote.html">Get A Quote</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+  
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+      </nav>
+        <br><br>
+        <div class="wrapper">
+            <h2>Our Services</h2>
+            <div class="line"></div>
+
+            <div class="single-service">
+                <div class="social"><i class="fa fa-file-photo-o"></i></div>
+                <span></span>
+                <h3>Dedicated Trucking Service</h3>
+                <p>Our dedicated trucking and freight services offer you the value and expedited shipping you expect. Go far and fast with ground shipping as your preferred shipment method. How do we handle it all at Hot Shot Trucking so your shipment arrives on time every time?</p>
+            </div>
+
+            <div class="single-service">
+                <div class="social"><i class="fa fa-laptop"></i></div>
+                <span></span>
+                <h3>Flatbed</h3>
+                <p>Serves the needs of customers transporting special equipment or material that create loads which are wide, over length, over-sized, overweight, or any combination thereof but can still legally move on the road. A Flatbed Trucking service is ideal for construction sites or shipping points that have no available dock or require quick loading and unloading for projects on the move with time sensitive schedules.</p>
+            </div>
+            
+            <div class="single-service">
+                <div class="social"><i class="fa fa-pie-chart"></i></div>
+                <span></span>
+                <h3>Hotshot</h3>
+                <p>You should be able to rest easy knowing that your partner of choice will come up with solutions that are built with you and you alone in mind. Someone who understands what makes your business unique and who can deftly play to those strengths by way of superior shipping and logistics services, absolutely no exceptions.</p>
+            </div>
+            
+        </div>
+
+        
+        <br><br><br><br><br><br><br><br><br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="portfolio3.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="portfolio5.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="portfolio4.jpg" style="width: 100%;">
+            </div>
+
+            <!-- Next and previous button -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+        <div class="contact-us">
+            <a href="contactUs.html"><h1>CONTACT US</h1></a>
+              <img src="phone.jpg" width="40px">
+                <h2>905-703-5714</h2>
+                  <img src="logo1.jpg" width="80px">
+                    <h2>northhaltontrucking@gmail.com</h2>
+          </div>
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+               
+
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+</body>
+</html>

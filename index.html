@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Creating A Nav Bar -->
+    <nav>
+        
+      <div class="container">
+      
+          <h1 href="index.html">North Halton Trucking INC.</h1>
+
+          <div class="menu">
+              <a href="index.html" class="is-active">Home</a>
+              <a href="services.html">Services</a>
+              <a href="quote.html">Get A Quote</a>
+              <a href="contactUs.html">Contact Us</a>
+              <a href="about.html">About Us</a>
+          </div>
+
+          <button class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
+    </nav>
+
+            <div class="right-side">
+              <a href="index.html">
+                <img src="logo1.jpg" width="45px">
+            </a>
+            </div>
+        </div>    
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(portfolio2.jpg);"></div>
+                <div class="img-text-wrapper">
+                  
+                  <div>
+                    <a class="subtitle" href=services.html><h1>SERVICES</h1></a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"  style="background-image:url(portfolio4.jpg);"></div>
+                <div class="img-text-wrapper">
+                  
+       
+                  <div>
+                    <a class="subtitle" href=quote.html><h1>QUOTE</h1></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"  style="background-image:url(portfolio5.jpg);"></div>
+                <div class="img-text-wrapper">
+                 
+      
+                  <div>
+                    <a class="subtitle" href=contactUs.html><h1>CONTACT US</h1></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"  style="background-image:url(portfolio8.jpg);"></div>
+                <div class="img-text-wrapper">
+                
+                  <div>
+                      <a class="subtitle" href="about.html"><h1>ABOUT US</h1></a> 
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+    </div>
+
+    <br>
+    <div class="contact-us">
+      <a href="contactUs.html"><h1>CONTACT US</h1></a>
+        <img src="phone.jpg" width="40px">
+          <h2>905-703-5714</h2>
+            <img src="logo1.jpg" width="80px">
+              <h2>northhaltontrucking@gmail.com</h2>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+      portfolioItems.forEach(portfolioItems=> {
+        portfolioItems.addEventListener('mouseover', () => {
+            console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.add('img-darken');
+        });    
+   
+    
+        
+        portfolioItems.addEventListener('mouseout', () => {
+            console.log(portfolioItems.childNodes[1].classList);
+            portfolioItems.childNodes[1].classList.remove('img-darken');
+        });    
+   
+   
+    })
+
+
+</script>
+</html>
